@@ -3,15 +3,21 @@ import Slider from "../components/Slider";
 import { useNavigate } from "react-router-dom";
 
 import image1 from "/lovable-uploads/935d59af-cc61-4e7b-bc69-36d59f03dc27.png";
+import image2 from "/lovable-uploads/19d8a974-ff74-443a-957a-155462028f2f.png";
+import image3 from "/lovable-uploads/0739d145-6e3a-47e7-97ec-b7dc45e27c2d.png";
+import image4 from "/lovable-uploads/1fc483c0-38bf-426e-8fe1-925eb6f589b0.png";
 
 const Danca = () => {
   const navigate = useNavigate();
   return (
     <div className="min-h-screen">
       {/* Logo no canto superior esquerdo */}
-      <div onClick={() => navigate("/home")} className="absolute top-8 left-8 z-50">
+      <div
+        onClick={() => navigate("/home")}
+        className="absolute top-8 left-8 z-50"
+      >
         <img
-          src="/lovable-uploads/19d8a974-ff74-443a-957a-155462028f2f.png"
+          src={image2}
           alt="Logo SEMANA - a arte moderna"
           className="h-16 w-auto opacity-0"
         />
@@ -52,7 +58,7 @@ const Danca = () => {
           <div className="grid md:grid-cols-2 gap-12 items-center">
             <div className="order-2 md:order-1">
               <img
-                src="/lovable-uploads/0739d145-6e3a-47e7-97ec-b7dc45e27c2d.png"
+                src={image3}
                 alt="Arte tradicional indígena"
                 className="w-full h-auto rounded-lg shadow-2xl"
               />
@@ -122,7 +128,7 @@ const Danca = () => {
             </div>
             <div className="relative h-96 md:h-[500px] flex items-center justify-center">
               <img
-                src="/lovable-uploads/1fc483c0-38bf-426e-8fe1-925eb6f589b0.png"
+                src={image4}
                 alt="Festival de Dança Contemporânea"
                 className="w-full h-auto max-h-full object-contain rounded-lg shadow-2xl"
               />
