@@ -2,6 +2,8 @@ import React from "react";
 import Slider from "../components/Slider";
 import { useNavigate } from "react-router-dom";
 
+import image1 from "/lovable-uploads/935d59af-cc61-4e7b-bc69-36d59f03dc27.png";
+
 const Danca = () => {
   const navigate = useNavigate();
   return (
@@ -19,7 +21,7 @@ const Danca = () => {
       <section
         className="h-screen bg-cover bg-center bg-no-repeat relative"
         style={{
-          backgroundImage: `url('/lovable-uploads/935d59af-cc61-4e7b-bc69-36d59f03dc27.png')`,
+          backgroundImage: `url(${image1})`,
         }}
       >
         <div className="absolute inset-0 bg-black bg-opacity-30"></div>
