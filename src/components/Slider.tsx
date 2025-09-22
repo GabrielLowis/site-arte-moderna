@@ -1,12 +1,13 @@
 import { useState, useEffect } from "react";
 
+import image1 from "/lovable-uploads/37658d80-78d7-4777-9c9b-9b98ef8820c5.png";
+
 const Slider = () => {
   const images = [
-    "/lovable-uploads/37658d80-78d7-4777-9c9b-9b98ef8820c5.png",
-    "/lovable-uploads/37658d80-78d7-4777-9c9b-9b98ef8820c5.png",
-    "/lovable-uploads/37658d80-78d7-4777-9c9b-9b98ef8820c5.png",
-    "/lovable-uploads/37658d80-78d7-4777-9c9b-9b98ef8820c5.png",
-    "/lovable-uploads/37658d80-78d7-4777-9c9b-9b98ef8820c5.png",
+    image1,
+    image1,
+    image1,
+    image1,
   ];
 
   const [currentImageIndex, setCurrentImageIndex] = useState(0);
